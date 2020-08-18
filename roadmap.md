@@ -1,5 +1,8 @@
 ## Roadmap
-My goal for the Fellowship is to create a data tool that allows researchers to pull data from the Open Government Portal and the Environment and Climate Change Canada Data Portal, and subsquently analyze and visualize the data. The training I receive during the Fellowship will give me the tools and expertise to create and teach this reproducible workflow. You can have a look at the detailed syllabus for the Fellowship [here][link_syllabus] and see the specific deliverables below. 
+
+As a Frictionless Data for Reproducible Research Fellow, my goal is to make my previous and future research more accessible (sharing the data and the code used to analyze it, generating DOIs to ensure they can be found, etc.). Besides, I will collaborate with open source projects to generate data packages that can be used as worked-out example datasets.
+
+[Here][link_syllabus] is the syllabus for the Fellowship. 
 
 ### August 2020
 - [x] Make roadmap
@@ -17,7 +20,7 @@ My goal for the Fellowship is to create a data tool that allows researchers to p
 - [ ] Add a data package blog post to the Fellows blog 
 
 ### November 2020
-- [ ] Create a data package of coordinate-based meta-analysis with neuroimaging data
+- [ ] Create a data package of coordinate-based meta-analysis with neuroimaging data for the neurosynth open source project
 - [ ] Add data package blog post to the Fellows blog 
 
 ### December 2020
