@@ -1,0 +1,85 @@
+{
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "name": "sub-01_socialcon-task",
+      "path": "https://raw.githubusercontent.com/danalclop/frictionless/master/sub-01_socialcon-task.csv",
+      "profile": "tabular-data-resource",
+      "schema": {
+        "fields": [
+          {
+            "name": "scanning_run",
+            "type": "integer",
+            "format": "default",
+            "title": "Functional MRI acquisition run",
+            "description": "During the experiment we acquired 8 fMRI acquisition runs for each participant. Each run included the presentation of all 36 concept definitions and lasted for approximately 7min."
+          },
+          {
+            "name": "onset",
+            "type": "integer",
+            "format": "default",
+            "title": "Onse time of concept definition",
+            "description": "We used the onset time (in seconds) to convolve the haemodynamic response function to the presentation of each trial for modelling purposes."
+          },
+          {
+            "name": "duration",
+            "type": "integer",
+            "format": "default",
+            "title": "Duration of concept definition",
+            "description": "Each concept definition lasted for 3.5 seconds to prevent the classifier from picking up the stimulus duration to discriminate between experimental conditions."
+          },
+          {
+            "name": "trial_type",
+            "type": "string",
+            "format": "default",
+            "title": "Concept category",
+            "description": "We selected 18 concepts whose definition made an explicit mention to the affective state of people, whereas the remaining 18 concept definition did not include any direct reference to affect. At the same time, we selected half of the concepts to match highly likeable interpersonal behaviours, whereas the other half referred to highly unlikable concepts."
+          },
+          {
+            "name": "stim_file",
+            "type": "string",
+            "format": "default",
+            "title": "Stimulus file name",
+            "description": "Stimulus file name that was fed into PsychoPy "
+          },
+          {
+            "name": "jitter",
+            "type": "integer",
+            "format": "default",
+            "description": "To facilitate the estimation of the peak of the haemodynamic response function across the different trials, we included a jitter so that the time between the offset of the current stimulus and the onset of the next audio definition varied between 6 and 8 seconds. The jitter followed a pseudo-exponential distribution resulting in 50\\% of trials with an ITI of 6 s, 25\\% of 6.5 s, 12.5\\% of 7 s and so on.",
+            "title": "Jittering the inter-trial interval"
+          },
+          {
+            "name": "concept",
+            "type": "string",
+            "format": "default",
+            "title": "Concept",
+            "description": "We selected 36 social concepts from the list reported by Anderson (1968), for which we developed short audio definitions.\n\nAnderson, N. H. (1968). Likableness ratings of 555 personality-trait words. Journal of Personality  and  Social  Psychology, 9(3), 272–79. https://doi.org/10.1037/536h0025907"
+          }
+        ]
+      }
+    }
+  ],
+  "keywords": [
+    "fMRI",
+    "neurosemantics",
+    "neural decoding"
+  ],
+  "name": "socialcon",
+  "title": "SOCIALCON fMRI task",
+  "description": "This dataset belongs to the functional MRI study entitled: 'Decoding social knowledge in the human brain'. The stud addressed how the brain maps different aspects of social information. We focused on two key dimensions of social knowledge: affect and likableness. Thirty participants were presented with audio definitions, half referring to affective  (e.g. empathetic) and half to non-affective concepts  (e.g. intelligent). Orthogonally, half of the concepts were highly likable (e.g. sincere) and half were socially undesirable (e.g. liar). We used a support vector machine to delineate how both concept dimensions are represented in a set of 9 \\textit{a priori} brain regions defined from previous meta-analyses on semantic and social cognition. We show that average decoding in semantic regions (e.g. lateral temporal lobe, inferior frontal gyrus, and precuneus) outperformed social ROIs (e.g. insula and anterior cingulate), with the lateral temporal lobe containing the highest amount of information about the affect and likableness of social concepts. We also found that the insula had a bias towards affect while the likableness dimension was better represented in anterior cingulate cortex. Our results do not support a modular view of social knowledge representation. They rather indicate that the brain representation of social concepts implicates a distributed network of regions that involves 'domain-specific' social cognitive systems, but with a greater dependence on language-semantic processing.",
+  "homepage": "https://www.biorxiv.org/content/10.1101/2020.08.18.255513v1",
+  "contributors": [
+    {
+      "title": "Alcala-Lopez, Daniel",
+      "role": "author"
+    }
+  ],
+  "licenses": [
+    {
+      "name": "CC-BY-4.0",
+      "title": "Creative Commons Attribution 4.0",
+      "path": "https://creativecommons.org/licenses/by/4.0/"
+    }
+  ]
+}
