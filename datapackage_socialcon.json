@@ -3,7 +3,7 @@
   "resources": [
     {
       "name": "sub-01_socialcon-task",
-      "path": "https://raw.githubusercontent.com/danalclop/frictionless/master/sub-01_socialcon-task.csv",
+      "path": "https://raw.githubusercontent.com/danalclop/frictionless/master/data/sub-01_socialcon-task.csv",
       "profile": "tabular-data-resource",
       "schema": {
         "fields": [
